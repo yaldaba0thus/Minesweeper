@@ -308,9 +308,8 @@ class Game:
     def __init__(self) -> None:
         pygame.init()
         pygame.font.init()
-        self.game_icon = pygame.image.load("icon.png")
+
         pygame.display.set_caption("Minesweeper")
-        pygame.display.set_icon(self.game_icon)
         self.width = 1200
         self.height = 1200
         self.screen = pygame.display.set_mode((self.width, self.height))
